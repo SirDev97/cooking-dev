@@ -2,6 +2,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 // components
 import Navbar from './components/Navbar';
+import ThemeSelector from './components/ThemeSelector';
 
 // pages
 import Create from './pages/create/Create';
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
+        <ThemeSelector />
         <Switch>
           <Route exact path="/">
             <Home />
