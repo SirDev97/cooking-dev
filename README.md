@@ -24,7 +24,7 @@
 
 ### How to use:
 
-`Note: This project mainly serves learning purposes and was not deployed to Firebase or Github - Pages, but you can always run the app on your local machine just note that you will have to adjust the firebase config file to fit your needs.`
+> :warning: **Note: This project mainly serves learning purposes and was not deployed to Firebase or Github - Pages, but you can always run the app on your local machine just note that you will have to adjust the firebase config file to fit your needs.**
 
 1. Download the ZIP file or clone/fork the repo.
 
