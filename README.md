@@ -37,3 +37,9 @@
 5. run `code .` to open your code editor.
 
 6. Feel free to customize and improve.
+
+![alt text](https://github.com/SirDev97/cooking-warrior/blob/main/src/assets/home.jpeg?raw=true)
+
+![alt text](https://github.com/SirDev97/cooking-warrior/blob/main/src/assets/recipe.jpeg?raw=true)
+
+![alt text](https://github.com/SirDev97/cooking-warrior/blob/main/src/assets/create.jpeg?raw=true)
