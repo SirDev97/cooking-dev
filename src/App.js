@@ -1,5 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+// hooks
 import { useTheme } from './hooks/useTheme';
 
 // components
@@ -10,7 +11,6 @@ import ThemeSelector from './components/ThemeSelector';
 import Create from './pages/create/Create';
 import Home from './pages/home/Home';
 import Recipe from './pages/recipe/Recipe';
-import Search from './pages/search/Search';
 
 // styles
 import './App.css';
@@ -29,9 +29,6 @@ function App() {
           </Route>
           <Route path="/create">
             <Create />
-          </Route>
-          <Route path="/search">
-            <Search />
           </Route>
           <Route path="/recipes/:id">
             <Recipe />

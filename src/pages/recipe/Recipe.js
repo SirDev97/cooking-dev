@@ -35,11 +35,11 @@ export default function Recipe() {
     return () => unsub();
   }, [id]);
 
-  const handleUpdate = () => {
-    projectFirestore.collection('recipes').doc(id).update({
-      title: 'new title',
-    });
-  };
+  // const handleUpdate = () => {
+  //   projectFirestore.collection('recipes').doc(id).update({
+  //     title: 'Title Updated',
+  //   });
+  // };
 
   return (
     <div className={`recipe ${mode}`}>
@@ -55,7 +55,6 @@ export default function Recipe() {
             ))}
           </ul>
           <p className="method">{recipe.method}</p>
-          <button onClick={handleUpdate}>Update Me</button>
         </>
       )}
     </div>

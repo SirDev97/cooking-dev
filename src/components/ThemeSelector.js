@@ -1,8 +1,8 @@
 import { useTheme } from '../hooks/useTheme';
-import modeIcon from '../assets/mode-icon.svg';
 
-// styles
+// styles and icons
 import './ThemeSelector.css';
+import modeIcon from '../assets/mode-icon.svg';
 
 const themeColors = ['#58249c', '#249c6b', '#b70233'];
 

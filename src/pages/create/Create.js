@@ -1,8 +1,10 @@
+// firebase
 import { projectFirestore } from '../../firebase/config';
 
 // hooks
 import { useRef, useState } from 'react';
 import { useHistory } from 'react-router';
+import { useTheme } from '../../hooks/useTheme';
 
 // styles
 import './Create.css';
@@ -13,8 +15,10 @@ export default function Create() {
   const [cookingTime, setCookingTime] = useState('');
   const [newIngredient, setNewIngredient] = useState('');
   const [ingredients, setIngredients] = useState([]);
+  const [error, setError] = useState('');
   const ingredientInput = useRef(null);
   const history = useHistory();
+  const { color } = useTheme();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,7 +34,7 @@ export default function Create() {
       await projectFirestore.collection('recipes').add(doc);
       history.push('/');
     } catch (err) {
-      console.log(err);
+      setError(err.message);
     }
   };
 
@@ -69,7 +73,7 @@ export default function Create() {
               value={newIngredient}
               ref={ingredientInput}
             />
-            <button className="btn" onClick={handleAdd}>
+            <button style={{ background: color }} onClick={handleAdd}>
               add
             </button>
           </div>
@@ -99,8 +103,9 @@ export default function Create() {
             required
           />
         </label>
-        <button className="btn">submit</button>
+        <button style={{ background: color }}>submit</button>
       </form>
+      {error && <p className="error">{error}</p>}
     </div>
   );
 }

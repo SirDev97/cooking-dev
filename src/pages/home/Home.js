@@ -1,4 +1,7 @@
+// firebase
 import { projectFirestore } from '../../firebase/config';
+
+// hooks
 import { useEffect, useState } from 'react';
 
 // components
