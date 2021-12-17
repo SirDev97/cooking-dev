@@ -38,6 +38,8 @@
 
 6. Feel free to customize and improve.
 
+### App preview images
+
 ![alt text](https://github.com/SirDev97/cooking-warrior/blob/main/src/assets/home.jpeg?raw=true)
 
 ![alt text](https://github.com/SirDev97/cooking-warrior/blob/main/src/assets/recipe.jpeg?raw=true)
