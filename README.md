@@ -24,8 +24,6 @@
 
 ### How to use:
 
-> :warning: **Note: This project mainly serves learning purposes and was not deployed to Firebase or Github - Pages, but you can always run the app on your local machine just note that you will have to adjust the firebase config file to fit your needs.**
-
 1. Download the ZIP file or clone/fork the repo.
 
 2. Unzip the files or init a new gh project.
@@ -37,6 +35,8 @@
 5. run `code .` to open your code editor.
 
 6. Feel free to customize and improve.
+
+> :warning: **Note: This project was mainly used learning purposes and was not deployed to Firebase or Github - Pages, but you can always run the app on your local machine just note that you will have to adjust the firebase config file to fit your needs.**
 
 ### App preview images
 
